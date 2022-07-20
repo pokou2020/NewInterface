@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Cont2 extends StatelessWidget {
-  const Cont2({Key? key}) : super(key: key);
+class Detailcont2 extends StatelessWidget {
+  const Detailcont2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
       child: Container(
-        height: 370,
+        height: 350,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

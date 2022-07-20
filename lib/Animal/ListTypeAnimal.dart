@@ -8,7 +8,7 @@ class ListTypeAnimal extends StatelessWidget {
     return ListView(
                   children: [
                     Container(
-                      height:250,
+                      height:270,
                       
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
                       image: DecorationImage(
@@ -16,7 +16,14 @@ class ListTypeAnimal extends StatelessWidget {
                                         'images/cat1.png'),
                                   fit: BoxFit.fill,
                                    ),
-                      color: Colors.red,
+                      gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Colors.orange.shade400,
+                Colors.amberAccent,
+              ],
+            )
                       ),
                       child: Container(
                         child: Column(
@@ -25,10 +32,10 @@ class ListTypeAnimal extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
-                                height:70,
+                                height:90,
                                 width:270,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
+                                  borderRadius: BorderRadius.circular(30),
                                   color: Colors.white,
                                 ),
                                 child: Column(
@@ -68,6 +75,7 @@ class ListTypeAnimal extends StatelessWidget {
                                             ],
                                           ),
                                         ),
+                                        SizedBox(width: 8,),
                                              Container(
         
                                              height: 40,
@@ -90,13 +98,21 @@ class ListTypeAnimal extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height:7),
+                    SizedBox(height:20),
                           Container(
-                      height:250,
+                      height:270,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
+                                                      gradient: LinearGradient(
+                                 begin: Alignment.topRight,
+                                 end: Alignment.bottomLeft,
+                               colors: [
+                               Colors.pink.shade100,
+                              Colors.pink.shade200,
+                                ],
+             ),
                        image: DecorationImage(
                                        image: AssetImage(
-                                        'images/dog.png'),
+                                        'images/cat1.png'),
                                   fit: BoxFit.fill,
                                    ),
                       color: Colors.red,
@@ -108,17 +124,18 @@ class ListTypeAnimal extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
-                                height:70,
+                                height:90,
                                 width:270,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
+                                  
+                                  borderRadius: BorderRadius.circular(30),
                                   color: Colors.white,
                                 ),
                                 child: Column(
                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     // ignore: avoid_unnecessary_containers
-                                    Row(
+                                         Row(
                                      
                                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                                       children: [
@@ -130,7 +147,7 @@ class ListTypeAnimal extends StatelessWidget {
                                               Padding(
                                                 padding: const EdgeInsets.only(bottom: 5, ),
                                                 child: Container(
-                                                  child: Text('Name race dog', 
+                                                  child: Text('Name race cat', 
                                                   style: TextStyle(
                                                      fontWeight: FontWeight.bold,
                                                      fontSize: 16,
@@ -141,7 +158,7 @@ class ListTypeAnimal extends StatelessWidget {
                                                  Row(
                                             children: [
                                               Icon(Icons.local_airport, color:Colors.black12),
-                                              Text('Dimbokro  (20km) ', 
+                                              Text('Abidjan  (20km) ', 
                                         style: TextStyle(
                                                color: Colors.black12,
                                         ),
@@ -151,6 +168,7 @@ class ListTypeAnimal extends StatelessWidget {
                                             ],
                                           ),
                                         ),
+                                        SizedBox(width: 8,),
                                              Container(
         
                                              height: 40,
@@ -173,6 +191,7 @@ class ListTypeAnimal extends StatelessWidget {
                         ),
                       ),
                     ),
+                         
                   ],
                 );
   }

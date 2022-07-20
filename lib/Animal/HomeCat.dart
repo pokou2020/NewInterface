@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import 'Detailcatcategorie.dart';
 import 'ListAnimal.dart';
 import 'ListTypeAnimal.dart';
 
@@ -29,7 +30,7 @@ class HomeCat extends StatelessWidget {
                               Container(
                                 child: Text("Welcome Mr boris",
                                 style: TextStyle(
-                                  color: Colors.black26,
+                                  color: Colors.grey[600],
                                 )
                                 ),
                                  ),
@@ -48,31 +49,30 @@ class HomeCat extends StatelessWidget {
                         ),
                          SizedBox(width:10),
                                  
-                                           CircleAvatar(
-                                             minRadius: 20,
-                                             backgroundColor: Colors.black26,
-                                            child: Icon(Icons.search, color:Colors.black45),
-                                           )
-                        
-                       
+                     CircleAvatar(
+                     minRadius: 20,
+                     backgroundColor: Colors.grey[100],
+                     child: Icon(Icons.search, color:Colors.black45),
+                     ) 
                       ],
                     ),
-                      
-                     
-
                   ],
                 ),
               ),
                SizedBox(height:15),
               Container(
-                height: 50,
-                width:300,
+                height: 60,
+                width:330,
                 child: ListAnimal(),
               ),
               Container(
                 width: 320,
-                 height:550,
-                child: ListTypeAnimal()
+                 height:MediaQuery.of(context).size.height/1.3,
+                child: InkWell(
+                  onTap: () {
+                   Navigator.of(context).pushNamed(Detailcatcategorie.routeName);
+                  },
+                  child: ListTypeAnimal())
               )
             ],
           ),

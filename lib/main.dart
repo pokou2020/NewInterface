@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:projetinterface/Quiz/Quiz.dart';
-import 'package:projetinterface/Quiz/home.dart';
-import 'package:projetinterface/semaine1/Jour1/J_1First.dart';
-import 'Animal/CatCategorie.dart';
+import 'Animal/Detailcatcategorie.dart';
 import 'Animal/HomeCat.dart';
-import 'semaine1/Jour1/J_1Acceuil.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:  HomeCat(),
+      routes: {
+           Detailcatcategorie.routeName: (ctx) => Detailcatcategorie(),
+      },
+      
     );
   }
 }

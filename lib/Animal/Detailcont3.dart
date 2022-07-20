@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Cont3 extends StatelessWidget {
-  const Cont3({ Key? key }) : super(key: key);
+class Detailcont3 extends StatelessWidget {
+  const Detailcont3({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                              height:70,
-                              width:270,
+                              height:90,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
+                                borderRadius: BorderRadius.circular(30),
                                 color: Colors.white,
                                 border: Border.all(
                                 color: Colors.black12
@@ -54,6 +53,7 @@ class Cont3 extends StatelessWidget {
                                           ],
                                         ),
                                       ),
+                                      SizedBox(width: 8,),
                                            Container(
         
                                            height: 40,
