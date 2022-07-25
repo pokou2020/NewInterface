@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Animal/Detailcatcategorie.dart';
-import 'Animal/HomeCat.dart';
-
+import 'pet_adoption/pet_adoption.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,12 +15,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  HomeCat(),
+      home: HomePage(),
       routes: {
-           Detailcatcategorie.routeName: (ctx) => Detailcatcategorie(),
+        DetailTypeAnimalPage.routeName: (ctx) => DetailTypeAnimalPage(),
       },
-      
     );
   }
 }
-
